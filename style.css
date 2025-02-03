@@ -31,3 +31,12 @@ nav ul li:hover{
     transition: ease-in-out 0.4s;
     height: 20px;
 }
+
+.sous-menu{
+    display: none;
+}
+
+.sous-menu-parent:hover + .sous-menu{
+    display: flex;
+    flex-direction: column;
+}
