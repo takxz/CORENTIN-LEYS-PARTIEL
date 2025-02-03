@@ -19,6 +19,7 @@ nav ul {
 nav ul li {
     display: inline;
     padding-left: 3px;
+    position: relative;
 }
 
 nav ul li a {
@@ -30,4 +31,26 @@ nav ul li:hover{
     background-color: lightblue;
     transition: ease-in-out 0.4s;
     height: 20px;
+}
+
+.sous-menu {
+    display: none;
+    position: absolute;
+}
+
+.sous-menu-parent:hover .sous-menu {
+    display: block;
+    background-color: rgb(12, 159, 208);
+}
+
+.sous-menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sous-menu a:hover {
+    background-color: lightblue;
+    transition: ease-in-out 0.4s
 }
